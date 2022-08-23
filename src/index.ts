@@ -6,7 +6,7 @@ class BigDecimalExtension {
             id: 'bigdec', // change this if you make an actual extension!
             name: 'Big Decimal',
             color1: '#2196F3',
-            color2: '#0D47A1',
+            color2: '#1976D2',
             blocks: [
                 {
                     opcode: 'bool',
