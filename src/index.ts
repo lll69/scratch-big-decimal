@@ -206,35 +206,35 @@ class BigDecimalExtension {
                     items: [
                         {
                             text: "CEILING(0)",
-                            value: 0
+                            value: "0"
                         },
                         {
                             text: "DOWN(1)",
-                            value: 1
+                            value: "1"
                         },
                         {
                             text: "FLOOR(2)",
-                            value: 2
+                            value: "2"
                         },
                         {
                             text: "HALF_DOWN(3)",
-                            value: 3
+                            value: "3"
                         },
                         {
                             text: "HALF_EVEN(4)",
-                            value: 4
+                            value: "4"
                         },
                         {
                             text: "HALF_UP(5)",
-                            value: 5
+                            value: "5"
                         },
                         {
-                            text: "UNNECESSARY(6)",
-                            value: 6
+                            text: "🚧UNNECESSARY(6)",
+                            value: "6"
                         },
                         {
                             text: "UP(7)",
-                            value: 7
+                            value: "7"
                         }
                     ],
                 }
@@ -278,10 +278,10 @@ class BigDecimalExtension {
         return bigDecimal.floor(String(args.ONE));
     }
     round(args: any) {
-        return bigDecimal.round(String(args.ONE), undefined, args.MODE);
+        return bigDecimal.round(String(args.ONE), undefined, parseInt(args.MODE));
     }
     round_pre(args: any) {
-        return bigDecimal.round(String(args.ONE), args.PRE, args.MODE);
+        return bigDecimal.round(String(args.ONE), args.PRE, parseInt(args.MODE));
     }
 }
 Scratch.extensions.register(new BigDecimalExtension());
