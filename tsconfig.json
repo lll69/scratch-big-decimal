@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "declaration": true,
+        "outDir": "dist",
+        "removeComments": true
+    },
+    "files": [
+        "src/index.ts",
+        "src/vm.d.ts"
+    ]
+}
