@@ -23,7 +23,7 @@ var BigDecimalExtension = (function () {
                 }, {
                     opcode: 'comp',
                     blockType: Scratch.BlockType.BOOLEAN,
-                    text: '[ONE] compareTo [TWO]',
+                    text: '[ONE] 比较 [TWO]',
                     arguments: {
                         ONE: {
                             type: Scratch.ArgumentType.STRING,
@@ -107,7 +107,7 @@ var BigDecimalExtension = (function () {
                 }, {
                     opcode: 'divide',
                     blockType: Scratch.BlockType.REPORTER,
-                    text: '[ONE] / [TWO] precision [PRE]',
+                    text: '[ONE] / [TWO] 精度 [PRE]',
                     arguments: {
                         ONE: {
                             type: Scratch.ArgumentType.STRING,
@@ -169,7 +169,7 @@ var BigDecimalExtension = (function () {
                 }, {
                     opcode: 'round',
                     blockType: Scratch.BlockType.REPORTER,
-                    text: 'round [MODE] [ONE]',
+                    text: '取整 [MODE] [ONE]',
                     arguments: {
                         MODE: {
                             type: Scratch.ArgumentType.NUMBER,
@@ -184,7 +184,7 @@ var BigDecimalExtension = (function () {
                 }, {
                     opcode: 'round_pre',
                     blockType: Scratch.BlockType.REPORTER,
-                    text: 'round [MODE] [ONE] precision [PRE]',
+                    text: '取整 [MODE] [ONE] 精度 [PRE]',
                     arguments: {
                         MODE: {
                             type: Scratch.ArgumentType.NUMBER,
